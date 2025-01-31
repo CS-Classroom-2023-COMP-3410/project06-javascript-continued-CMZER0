@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DU Registration Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 80px;
+            background-color: #a00;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .logo {
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .nav-links img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .content {
+            flex-grow: 1;
+            background-color: #eee;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .register-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            border: 2px solid #a00;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 400px;
+        }
+
+        .icon-box {
+            background: #a00;
+            padding: 15px;
+            border-radius: 5px 0 0 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon-box img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .text-box {
+            flex-grow: 1;
+            padding-left: 15px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <div class="menu-icon">&#9776;</div>
+                <span class="du-logo">DU UNIVERSITY OF DENVER</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#"><img src="icons/home.svg" alt="Home"></a></li>
+                <li><a href="#"><img src="icons/calendar.svg" alt="Register"></a></li>
+                <li><a href="#"><img src="icons/settings.svg" alt="Settings"></a></li>
+                <li><a href="#"><img src="icons/documents.svg" alt="Documents"></a></li>
+                <li><a href="#"><img src="icons/mail.svg" alt="Mail"></a></li>
+                <li><a href="#"><img src="icons/logout.svg" alt="Logout"></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <h1 class="title">Registration Portal</h1>
+            <div class="register-box">
+                <div class="icon-box">
+                    <img src="icons/register.svg" alt="Register Icon">
+                </div>
+                <div class="text-box">Register For Classes</div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
